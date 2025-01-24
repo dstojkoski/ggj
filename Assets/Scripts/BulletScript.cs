@@ -18,6 +18,7 @@ public class BulletScript : MonoBehaviour
         Vector3 collisionPoint = collision.contacts[0].point;
         Debug.Log("Collision at: " + collisionPoint);
 
+        Destroy(collision.gameObject);
         Destroy(gameObject);
     }
 }

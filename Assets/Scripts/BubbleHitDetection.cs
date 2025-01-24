@@ -8,14 +8,4 @@ public class BubbleHitDetection : MonoBehaviour
     {
         rigidbody = GetComponent<Rigidbody>();
     }
-
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
 }
