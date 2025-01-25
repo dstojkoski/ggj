@@ -5,7 +5,7 @@ public class BubbleMovement : MonoBehaviour
     public Vector3 velocity = new Vector3(0, 1, 0);  // Initial velocity
     private Rigidbody rb;
 
-    void Start()
+    void Awake()
     {
         rb = GetComponent<Rigidbody>();
         rb.linearVelocity = velocity;

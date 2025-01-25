@@ -18,7 +18,7 @@ public class BubbleHitDetection : MonoBehaviour
             if (counter > 0)
             {
                 counter--;
-                GameManager.Instance.StartBubbleSplit(transform.position, rigidbody.linearVelocity, counter, bubblePrefab);
+                GameManager.Instance.StartBubbleSplit(transform.localScale, transform.position, rigidbody.linearVelocity, counter, bubblePrefab);
             }
             Destroy(gameObject);
             Destroy(collision.gameObject);
