@@ -15,10 +15,11 @@ public class BulletScript : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        Vector3 collisionPoint = collision.contacts[0].point;
-        Debug.Log("Collision at: " + collisionPoint);
+        // DEV NOTE: DONT NEED SPHERE REMOVAL CODE SINCE WE WILL DO THIS LOGIC FROM BUBBLE HIT DETECTION
+        //Vector3 collisionPoint = collision.contacts[0].point;
+        //Debug.Log("Collision at: " + collisionPoint);
 
-        Destroy(collision.gameObject);
-        Destroy(gameObject);
+        //Destroy(collision.gameObject);
+        //Destroy(gameObject);
     }
 }

@@ -123,6 +123,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fe2576568cbbaf4db98aa9cf293e61e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  counter: 3
+  bubblePrefab: {fileID: 2169393118278979003, guid: 63948e584ab7df047a973595f47431f3, type: 3}
 --- !u!114 &6215509111403215278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,7 +137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a3e1c4c609199245b3d860c75f1b7e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: {x: 0, y: -1, z: 0}
+  velocity: {x: 0, y: -0.02, z: 0}
 --- !u!54 &9050988835778948266
 Rigidbody:
   m_ObjectHideFlags: 0
