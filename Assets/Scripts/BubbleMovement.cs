@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 public class BubbleMovement : MonoBehaviour
@@ -19,7 +20,7 @@ public class BubbleMovement : MonoBehaviour
         Vector3 dir = rb.linearVelocity.normalized;
         rb.linearVelocity = dir * 10;
 
-        if (collision.gameObject.CompareTag("Bubble"))
+        if (collision.gameObject.CompareTag("Bubble") || collision.gameObject.CompareTag("Player"));
         {
             return;
         }
@@ -35,7 +36,7 @@ public class BubbleMovement : MonoBehaviour
 
     void IgnoreBubbleCollisions()
     {
-        GameObject[] allBubbles = GameObject.FindGameObjectsWithTag("Bubble");
+        var allBubbles = GameObject.FindGameObjectsWithTag("Bubble").Concat(GameObject.FindGameObjectsWithTag("Player"));
         foreach (var bubble in allBubbles)
         {
             if (bubble != gameObject) // Ignore self-collision
