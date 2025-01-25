@@ -16,8 +16,8 @@ GameObject:
   - component: {fileID: 6215509111403215278}
   - component: {fileID: 9050988835778948266}
   m_Layer: 0
-  m_Name: ExampleSphere
-  m_TagString: Untagged
+  m_Name: Bubble
+  m_TagString: Bubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counter: 3
-  bubblePrefab: {fileID: 2169393118278979003, guid: 63948e584ab7df047a973595f47431f3, type: 3}
+  bubblePrefab: {fileID: 3279948270666574364}
 --- !u!114 &6215509111403215278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a3e1c4c609199245b3d860c75f1b7e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: {x: 0, y: -0.02, z: 0}
+  velocity: {x: -10, y: -10, z: -10}
 --- !u!54 &9050988835778948266
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -146,9 +146,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3279948270666574364}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 0.0000001
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -161,7 +161,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
