@@ -15,6 +15,7 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth = maxHealth;
         UpdateHealthUI();  // Update the UI with the initial health
+
     }
 
     void Update()
@@ -55,7 +56,11 @@ public class PlayerHealth : MonoBehaviour
 
     void UpdateHealthUI()
     {
-        if (healthText != null)
+        if (healthText != null && isInvincible)
+        {
+            healthText.text = "INVINCIBLE!! Health: " + currentHealth;  // Update the text on the UI
+        }
+        else if (healthText != null)
         {
             healthText.text = "Health: " + currentHealth;  // Update the text on the UI
         }
