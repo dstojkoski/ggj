@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class PlayerShoot : MonoBehaviour
 {
@@ -18,14 +17,10 @@ public class PlayerShoot : MonoBehaviour
 
     void Shoot()
     {
-        // instantiate a bullet prefab
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, Quaternion.identity);
-        
-        // set shoot direciton to where we ar looking towards
         Vector3 shootDirection = GetShootDirection();
         bullet.transform.forward = shootDirection;
 
-        // add velocity to bullet so it travels
         Rigidbody rb = bullet.GetComponent<Rigidbody>();
         rb.linearVelocity = shootDirection * bulletSpeed;
     }
