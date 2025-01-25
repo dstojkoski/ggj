@@ -1,40 +1,43 @@
 using System.Collections;
 using UnityEngine;
+using TMPro;  // For TextMeshPro
 
 public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 3;
     public float invincibilityTime = 3.0f;
+    public TextMeshProUGUI healthText;  // Reference to the Text component
+
     private int currentHealth;
     private bool isInvincible = false;
 
     void Start()
     {
         currentHealth = maxHealth;
+        UpdateHealthUI();  // Update the UI with the initial health
     }
 
     void Update()
     {
         if (isInvincible)
         {
-            // TODO: INDICATOR
+            // TODO: Add visual indicators for invincibility
         }
     }
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other);
         if (other.CompareTag("Bubble") && !isInvincible)
         {
-            TakeDamage(1);  // take 1 damage when hit by ball
-            StartCoroutine(ActivateInvincibility(invincibilityTime)); // Activate invincibility for 3 seconds
+            TakeDamage(1);  // Take 1 damage when hit by Bubble
+            StartCoroutine(ActivateInvincibility(invincibilityTime)); // 3 seconds of invincibility
         }
     }
 
     void TakeDamage(int damage)
     {
-        Debug.Log("Damage");
         currentHealth -= damage;
+        UpdateHealthUI();  // Update the UI when health changes
         Debug.Log("Player took damage! Current health: " + currentHealth);
 
         if (currentHealth <= 0)
@@ -50,8 +53,17 @@ public class PlayerHealth : MonoBehaviour
         isInvincible = false;
     }
 
+    void UpdateHealthUI()
+    {
+        if (healthText != null)
+        {
+            healthText.text = "Health: " + currentHealth;  // Update the text on the UI
+        }
+    }
+
     void Die()
     {
         Debug.Log("Player died!");
+        // Additional death handling logic
     }
 }
