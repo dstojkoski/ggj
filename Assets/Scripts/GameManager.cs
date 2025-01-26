@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;  // To use scene management
 
 public class GameManager : MonoBehaviour
 {
@@ -38,6 +39,9 @@ public class GameManager : MonoBehaviour
         {
             Instantiate(bubblePrefab, spawnPositions[i].position, Quaternion.identity);
         }
+
+        // Check for the presence of bubbles and transition to next level
+        CheckBubbles();
     }
 
     public void StartBubbleSplit(Vector3 scale, Vector3 position, Vector3 velocity, int counter, GameObject bubblePrefab)
@@ -45,5 +49,22 @@ public class GameManager : MonoBehaviour
         GameObject tempSplitter = new GameObject("BubbleSplitter");
         BubbleSplitter splitterScript = tempSplitter.AddComponent<BubbleSplitter>();
         splitterScript.Initialize(scale, position, velocity, counter, bubblePrefab);
+    }
+
+    // Check for remaining bubbles in the scene
+    private void CheckBubbles()
+    {
+        // Check if there are any active bubbles in the scene
+        if (GameObject.FindGameObjectsWithTag("Bubble").Length == 0)
+        {
+            // No bubbles left, load the next level
+            LoadNextLevel();
+        }
+    }
+
+    // Load the NextLevel scene
+    private void LoadNextLevel()
+    {
+        SceneManager.LoadScene("NextLevel");
     }
 }
