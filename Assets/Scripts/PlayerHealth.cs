@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;  // For TextMeshPro
 
 public class PlayerHealth : MonoBehaviour
@@ -83,6 +84,7 @@ public class PlayerHealth : MonoBehaviour
     void Die()
     {
         Debug.Log("Player died!");
+        SceneManager.LoadScene("GameOver");
         // Additional death handling logic
     }
 }

@@ -14,12 +14,15 @@ public class BubbleMovement : MonoBehaviour
         IgnoreBubbleCollisions();
     }
 
-    void OnCollisionEnter(Collision collision)
+    void Update()
     {
         // hack this bullshit cause fuck it
         Vector3 dir = rb.linearVelocity.normalized;
         rb.linearVelocity = dir * 10;
+    }
 
+    void OnCollisionEnter(Collision collision)
+    {
         if (collision.gameObject.CompareTag("Bubble") || collision.gameObject.CompareTag("Player"));
         {
             return;

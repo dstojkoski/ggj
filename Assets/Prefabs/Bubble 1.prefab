@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fe2576568cbbaf4db98aa9cf293e61e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counter: 3
+  counter: 2
   bubblePrefab: {fileID: 4125038775402691206}
 --- !u!114 &4419808565908996357
 MonoBehaviour:
