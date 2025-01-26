@@ -172,6 +172,10 @@ PrefabInstance:
       value: guma1 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f06d107c843fe1e418d36b0145aba233, type: 3}
+      propertyPath: m_TagString
+      value: wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f06d107c843fe1e418d36b0145aba233, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -429,6 +433,10 @@ PrefabInstance:
       value: Flowers2
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c44b38bcda4cf554ba013e65871fc3c5, type: 3}
+      propertyPath: m_TagString
+      value: wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c44b38bcda4cf554ba013e65871fc3c5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -612,6 +620,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c44b38bcda4cf554ba013e65871fc3c5, type: 3}
       propertyPath: m_Name
       value: Flowers2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c44b38bcda4cf554ba013e65871fc3c5, type: 3}
+      propertyPath: m_TagString
+      value: wall
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c44b38bcda4cf554ba013e65871fc3c5, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -863,6 +875,10 @@ PrefabInstance:
       value: Flowers2 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c44b38bcda4cf554ba013e65871fc3c5, type: 3}
+      propertyPath: m_TagString
+      value: wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c44b38bcda4cf554ba013e65871fc3c5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -1076,6 +1092,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c44b38bcda4cf554ba013e65871fc3c5, type: 3}
       propertyPath: m_Name
       value: Flowers2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c44b38bcda4cf554ba013e65871fc3c5, type: 3}
+      propertyPath: m_TagString
+      value: wall
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c44b38bcda4cf554ba013e65871fc3c5, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1446,6 +1466,10 @@ PrefabInstance:
       value: guma1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f06d107c843fe1e418d36b0145aba233, type: 3}
+      propertyPath: m_TagString
+      value: wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f06d107c843fe1e418d36b0145aba233, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -1505,6 +1529,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c90bd4e196b5df043b988fb1213c95f9, type: 3}
       propertyPath: m_Name
       value: Flowers1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c90bd4e196b5df043b988fb1213c95f9, type: 3}
+      propertyPath: m_TagString
+      value: wall
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c90bd4e196b5df043b988fb1213c95f9, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1582,6 +1610,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c90bd4e196b5df043b988fb1213c95f9, type: 3}
       propertyPath: m_Name
       value: Flowers1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c90bd4e196b5df043b988fb1213c95f9, type: 3}
+      propertyPath: m_TagString
+      value: wall
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c90bd4e196b5df043b988fb1213c95f9, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1919,6 +1951,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c90bd4e196b5df043b988fb1213c95f9, type: 3}
       propertyPath: m_Name
       value: Flowers1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c90bd4e196b5df043b988fb1213c95f9, type: 3}
+      propertyPath: m_TagString
+      value: wall
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c90bd4e196b5df043b988fb1213c95f9, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2533,6 +2569,10 @@ PrefabInstance:
       value: Flowers1 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c90bd4e196b5df043b988fb1213c95f9, type: 3}
+      propertyPath: m_TagString
+      value: wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c90bd4e196b5df043b988fb1213c95f9, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -2856,6 +2896,10 @@ PrefabInstance:
       value: Flowers1 (5)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c90bd4e196b5df043b988fb1213c95f9, type: 3}
+      propertyPath: m_TagString
+      value: wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c90bd4e196b5df043b988fb1213c95f9, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -2915,6 +2959,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f06d107c843fe1e418d36b0145aba233, type: 3}
       propertyPath: m_Name
       value: guma1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f06d107c843fe1e418d36b0145aba233, type: 3}
+      propertyPath: m_TagString
+      value: wall
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f06d107c843fe1e418d36b0145aba233, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3555,6 +3603,10 @@ PrefabInstance:
       value: Flowers1 (7)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c90bd4e196b5df043b988fb1213c95f9, type: 3}
+      propertyPath: m_TagString
+      value: wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c90bd4e196b5df043b988fb1213c95f9, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -3614,6 +3666,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f06d107c843fe1e418d36b0145aba233, type: 3}
       propertyPath: m_Name
       value: guma1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f06d107c843fe1e418d36b0145aba233, type: 3}
+      propertyPath: m_TagString
+      value: wall
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f06d107c843fe1e418d36b0145aba233, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3888,6 +3944,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c90bd4e196b5df043b988fb1213c95f9, type: 3}
       propertyPath: m_Name
       value: Flowers1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c90bd4e196b5df043b988fb1213c95f9, type: 3}
+      propertyPath: m_TagString
+      value: wall
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c90bd4e196b5df043b988fb1213c95f9, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4373,6 +4433,10 @@ PrefabInstance:
       value: guma1 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f06d107c843fe1e418d36b0145aba233, type: 3}
+      propertyPath: m_TagString
+      value: wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f06d107c843fe1e418d36b0145aba233, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -4556,6 +4620,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c90bd4e196b5df043b988fb1213c95f9, type: 3}
       propertyPath: m_Name
       value: Flowers1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c90bd4e196b5df043b988fb1213c95f9, type: 3}
+      propertyPath: m_TagString
+      value: wall
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c90bd4e196b5df043b988fb1213c95f9, type: 3}
       propertyPath: m_StaticEditorFlags

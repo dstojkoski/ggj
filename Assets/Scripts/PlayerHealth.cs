@@ -7,6 +7,7 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth = 3;
     public float invincibilityTime = 3.0f;
     public TextMeshProUGUI healthText;  // Reference to the Text component
+    public GameObject[] hearts;  // Array to hold heart UI images
 
     private int currentHealth;
     private bool isInvincible = false;
@@ -15,7 +16,6 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth = maxHealth;
         UpdateHealthUI();  // Update the UI with the initial health
-
     }
 
     void Update()
@@ -56,13 +56,27 @@ public class PlayerHealth : MonoBehaviour
 
     void UpdateHealthUI()
     {
-        if (healthText != null && isInvincible)
-        {
-            healthText.text = "INVINCIBLE!! Health: " + currentHealth;  // Update the text on the UI
-        }
-        else if (healthText != null)
+        if (healthText != null)
         {
             healthText.text = "Health: " + currentHealth;  // Update the text on the UI
+        }
+
+        // Hide hearts based on current health
+        for (int i = 0; i < hearts.Length; i++)
+        {
+            if (i < currentHealth)
+            {
+                hearts[i].SetActive(true);  // Show heart if health is above this index
+            }
+            else
+            {
+                hearts[i].SetActive(false);  // Hide heart if health is below this index
+            }
+        }
+
+        if (isInvincible)
+        {
+            healthText.text = "INVINCIBLE!! Health: " + currentHealth;  // Show invincibility message
         }
     }
 
