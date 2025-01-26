@@ -3,7 +3,52 @@ guid: 2efafc7fab8f21c438597210de9076db
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Emissive.001
+    second: {fileID: 2100000, guid: be73d80df70fed5459fd813375d69d49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Marble.001
+    second: {fileID: 2100000, guid: 9e1c531259ba54c40b033f74c04e58f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pillar_Trim1.001
+    second: {fileID: 2100000, guid: e62dddc4e8cfe034eba7361fe265df69, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pipes1
+    second: {fileID: 2100000, guid: 3ecddd2a9d0022946ad42f6fa33ed94f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pipes2
+    second: {fileID: 2100000, guid: 61c8ead7f5742ed43aa19cddec933585, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tiles1.001
+    second: {fileID: 2100000, guid: caf7ea91781381d4d9d3eba82a428d06, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tiles2.001
+    second: {fileID: 2100000, guid: e459a9b1cbb03b54baccaf1ede234d8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tiles3.001
+    second: {fileID: 2100000, guid: a34fe2c035bd75a439519ece314f1899, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TrimSheet1.001
+    second: {fileID: 2100000, guid: cd1a9fff13cda9646ba69771192f0d95, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -46,7 +91,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
