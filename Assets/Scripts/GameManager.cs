@@ -34,7 +34,12 @@ public class GameManager : MonoBehaviour
     }
 
     private void Update() {
-        CheckBubbles();
+        if (SceneManager.GetActiveScene().name == "GameOver")
+        {
+            return;  // Exit Update if in the GameOver scene, stopping further checks
+        }
+        else CheckBubbles();
+
     }
 
     private void SpawnBubbles()
