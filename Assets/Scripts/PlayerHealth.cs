@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;  // For TextMeshPro
+using UnityEngine.UI;  // For UI elements
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class PlayerHealth : MonoBehaviour
     public float invincibilityTime = 3.0f;
     public TextMeshProUGUI healthText;  // Reference to the Text component
     public GameObject[] hearts;  // Array to hold heart UI images
+    public GameObject redScreenPanel;  // Reference to the full-screen red overlay panel
 
     private int currentHealth;
     private bool isInvincible = false;
@@ -33,6 +35,9 @@ public class PlayerHealth : MonoBehaviour
         {
             TakeDamage(1);  // Take 1 damage when hit by Bubble
             StartCoroutine(ActivateInvincibility(invincibilityTime)); // 3 seconds of invincibility
+
+            // Activate the red screen panel
+            StartCoroutine(ActivateRedScreenPanel(0.2f)); // Adjust the duration as needed
         }
     }
 
@@ -53,6 +58,13 @@ public class PlayerHealth : MonoBehaviour
         isInvincible = true;
         yield return new WaitForSeconds(duration);
         isInvincible = false;
+    }
+
+    IEnumerator ActivateRedScreenPanel(float duration)
+    {
+        redScreenPanel.SetActive(true);  // Activate the red panel
+        yield return new WaitForSeconds(duration);
+        redScreenPanel.SetActive(false);  // Deactivate the red panel
     }
 
     void UpdateHealthUI()
