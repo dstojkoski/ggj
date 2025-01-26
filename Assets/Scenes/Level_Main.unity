@@ -451,9 +451,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3677341e465094b4884338f74f5aa71a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 2169393118278979003, guid: 63948e584ab7df047a973595f47431f3, type: 3}
+  bulletPrefab: {fileID: 4849759748617739804, guid: e00afe64161dd6b4f96526b8bb2c9a1c, type: 3}
   bulletSpawnPoint: {fileID: 711127310}
-  bulletSpeed: 10
+  bulletSpeed: 25
   playerCamera: {fileID: 330585545}
 --- !u!1001 &120222213
 PrefabInstance:
@@ -1226,6 +1226,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 213572411}
+  - {fileID: 711127310}
   m_Father: {fileID: 69746343}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &330585547
@@ -2218,11 +2219,11 @@ Transform:
   m_GameObject: {fileID: 711127309}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.24, y: 1.332, z: 0.683}
+  m_LocalPosition: {x: 0.21699905, y: -0.20500004, z: 1.241}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 69746343}
+  m_Father: {fileID: 330585546}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &715440674
 PrefabInstance:
@@ -3500,6 +3501,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031675247}
   m_CullTransparentMesh: 1
+--- !u!1 &1174813512 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ba31c61dd0bff6e49a5341e30b8202bb, type: 3}
+  m_PrefabInstance: {fileID: 1207819386}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1174813515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174813512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f79819012fb324445a7fb2892757b74d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swayAmount: 0.06
+  maxSwayAmount: 0.12
+  smoothAmount: 6
+  bobFrequency: 4
+  bobAmplitude: 0.035
 --- !u!1 &1189103966
 GameObject:
   m_ObjectHideFlags: 0
@@ -3638,7 +3661,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ba31c61dd0bff6e49a5341e30b8202bb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1174813515}
   m_SourcePrefab: {fileID: 100100000, guid: ba31c61dd0bff6e49a5341e30b8202bb, type: 3}
 --- !u!1 &1320103629
 GameObject:
@@ -5297,9 +5323,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5794805745530959943, guid: 9036c4c11bca5e542b4acfa61039ff86, type: 3}
       insertIndex: -1
       addedObject: {fileID: 330585546}
-    - targetCorrespondingSourceObject: {fileID: 5794805745530959943, guid: 9036c4c11bca5e542b4acfa61039ff86, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 711127310}
     - targetCorrespondingSourceObject: {fileID: 5794805745530959943, guid: 9036c4c11bca5e542b4acfa61039ff86, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1556566502}

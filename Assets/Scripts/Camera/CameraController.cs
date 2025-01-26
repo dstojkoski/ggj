@@ -20,7 +20,7 @@ public class CameraController : MonoBehaviour
     // Camera
     public Camera playerCamera;
     public float lookSpeed = 2.0f;     // mouseSensitivity;
-    public float lookXLimit = 45.0f;
+    public float lookXLimit = 70.0f;
     private float rotationX = 0;
 
     private CharacterController characterController;
