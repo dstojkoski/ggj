@@ -18,9 +18,6 @@ public class BulletBehavior : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
 
-        if (collision.gameObject.CompareTag("wall"))
-        {
-
             // Disable all movement and physics
             Rigidbody rb = GetComponent<Rigidbody>();
             if (rb != null)
@@ -39,28 +36,11 @@ public class BulletBehavior : MonoBehaviour
             transform.parent = null;
 
             StartCoroutine(FadeAndDestroy());
-        }
     }
 
     System.Collections.IEnumerator FadeAndDestroy()
     {
-        yield return new WaitForSeconds(1.5f);
-
-        float fadeDuration = 1f;
-        float elapsedTime = 0f;
-
-        while (elapsedTime < fadeDuration)
-        {
-            elapsedTime += Time.deltaTime;
-            if (bulletMaterial != null)
-            {
-                Color newColor = originalColor;
-                newColor.a = Mathf.Lerp(1f, 0f, elapsedTime / fadeDuration);
-                bulletMaterial.color = newColor;
-            }
-
-            yield return null;
-        }
+        yield return new WaitForSeconds(0.01f);
 
         Destroy(gameObject);
     }

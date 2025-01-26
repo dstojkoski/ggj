@@ -17,7 +17,8 @@ public class PlayerShoot : MonoBehaviour
 
     void Shoot()
     {
-        GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, Quaternion.Euler(0,0,90));
+        // change here
+        GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
         Vector3 shootDirection = GetShootDirection();
         bullet.transform.forward = shootDirection;
 

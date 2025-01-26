@@ -20,8 +20,8 @@ public class BubbleHitDetection : MonoBehaviour
                 counter--;
                 GameManager.Instance.StartBubbleSplit(transform.localScale, transform.position, rigidbody.linearVelocity, counter, bubblePrefab);
             }
-            Destroy(gameObject);
             Destroy(collision.gameObject);
+            Destroy(gameObject);
         }
     }
 }
