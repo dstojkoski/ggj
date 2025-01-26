@@ -17,8 +17,10 @@ public class BulletBehavior : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
+
         if (collision.gameObject.CompareTag("wall"))
         {
+
             // Disable all movement and physics
             Rigidbody rb = GetComponent<Rigidbody>();
             if (rb != null)
