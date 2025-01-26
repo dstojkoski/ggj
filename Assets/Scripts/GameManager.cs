@@ -33,6 +33,10 @@ public class GameManager : MonoBehaviour
         SpawnBubbles();
     }
 
+    private void Update() {
+        CheckBubbles();
+    }
+
     private void SpawnBubbles()
     {
         for (int i = 0; i < spawnPositions.Length; i++)
