@@ -4298,7 +4298,10 @@ MonoBehaviour:
   maxHealth: 3
   invincibilityTime: 3
   healthText: {fileID: 0}
-  hearts: []
+  hearts:
+  - {fileID: 1189103966}
+  - {fileID: 52947467}
+  - {fileID: 142455196}
 --- !u!136 &1556566504
 CapsuleCollider:
   m_ObjectHideFlags: 0
